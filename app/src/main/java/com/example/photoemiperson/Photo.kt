@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import kotlinx.android.synthetic.main.activity_photo.*
+import java.util.jar.Manifest
 
 class Photo : AppCompatActivity(), View.OnClickListener {
 
@@ -28,9 +29,8 @@ class Photo : AppCompatActivity(), View.OnClickListener {
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if(resultCode == Activity.RESULT_OK){
-            val bitmap = data?.extras?.get("data") as Bitmap
-            ivPic.setImageBitmap(bitmap)
-        }
+        val bitmap = data?.extras?.get("data") as Bitmap
+        ivPic.setImageBitmap(bitmap)
     }
+
 }
