@@ -11,4 +11,10 @@
     <string name="enter_load_tenure">Enter Load Tenure(Months)...</string>
     <string name="calculate">Calculate</string>
     <string name="_0">0</string>
+    <string name="enter_name">Enter name</string>
+    <string name="enter_age">Enter Age</string>
+    <string name="enter_date_of_birth">Enter Date of Birth</string>
+    <string name="enter_country">Enter Country</string>
+    <string name="create_person">Add Person</string>
+    <string name="make_person">Create Person</string>
 </resources>

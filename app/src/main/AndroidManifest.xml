@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AddPerson"></activity>
+        <activity android:name=".PersonDisplay"></activity>
+        <activity android:name=".CreatePerson" />
         <activity android:name=".EMICalculator" />
         <activity android:name=".Photo" />
         <activity android:name=".MainActivity">

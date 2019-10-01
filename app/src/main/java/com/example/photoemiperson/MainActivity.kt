@@ -15,12 +15,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_main)
         btnPhoto.setOnClickListener(this)
         btnEMI.setOnClickListener(this)
+        btnPerson.setOnClickListener(this)
     }
 
     override fun onClick(view: View){
         when(view.id){
             R.id.btnPhoto -> openPhoto()
             R.id.btnEMI -> openEMICal()
+            R.id.btnPerson -> openPersonDisplay()
         }
     }
 
@@ -31,6 +33,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun openEMICal(){
         val intent = Intent(this, EMICalculator::class.java)
+        startActivity(intent)
+    }
+
+    private fun openPersonDisplay(){
+        val intent = Intent(this, PersonDisplay::class.java)
         startActivity(intent)
     }
 }
