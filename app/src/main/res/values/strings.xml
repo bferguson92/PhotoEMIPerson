@@ -1,14 +1,14 @@
 <resources>
     <string name="app_name">PhotoEMIPerson</string>
     <string name="string_photoemiperson">PhotoEMIPerson</string>
-    <string name="string_photo">Take Photo!</string>
+    <string name="string_photo">Take Photo</string>
     <string name="string_emi">Open EMI Calculator</string>
-    <string name="btn_person">Add Person!</string>
+    <string name="btn_person">Add Person</string>
     <string name="take_photo">Take Photo</string>
     <string name="taken_picture">Taken picture</string>
-    <string name="string_loan_amount">Home Loan Amount:</string>
-    <string name="enter_loan_amount">Enter Loan Amount...</string>
+    <string name="enter_loan_amount">0</string>
     <string name="enter_interset_rate">Enter interset rate...</string>
     <string name="enter_load_tenure">Enter Load Tenure(Months)...</string>
     <string name="calculate">Calculate</string>
+    <string name="_0">0</string>
 </resources>

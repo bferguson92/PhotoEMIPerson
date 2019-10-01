@@ -7,36 +7,64 @@
     tools:context=".EMICalculator">
 
 
-     <EditText
-        android:id="@+id/etLoanAmount"
+     <TextView
+        android:id="@+id/tvLoanAmount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/enter_loan_amount"
-        android:inputType="number"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/_0"
+        android:textSize="24sp"
+        android:textColor="@color/color_black"
+        app:layout_constraintTop_toTopOf="parent"/>
 
-    <EditText
-        android:id="@+id/etIntersetRate"
+    <SeekBar
+        android:id="@+id/sbLoanAmount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/enter_interset_rate"
-        android:inputType="numberDecimal"
-        app:layout_constraintTop_toBottomOf="@+id/etLoanAmount"/>
+        app:layout_constraintTop_toBottomOf="@+id/tvLoanAmount"
+        android:max="200000000"/>
 
-    <EditText
-        android:id="@+id/etTenure"
+    <TextView
+        android:id="@+id/tvInterestRate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/enter_load_tenure"
-        android:inputType="numberDecimal"
-        app:layout_constraintTop_toBottomOf="@+id/etIntersetRate" />
+        android:hint="@string/enter_loan_amount"
+        android:textSize="24sp"
+        android:textColor="@color/color_black"
+        android:text="@string/_0"
+        app:layout_constraintTop_toBottomOf="@+id/sbLoanAmount"/>
+
+    <SeekBar
+        android:id="@+id/sbInterestRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="20"
+        app:layout_constraintTop_toBottomOf="@+id/tvInterestRate" />
+
+    <TextView
+        android:id="@+id/tvTenure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_loan_amount"
+        android:textSize="24sp"
+        android:textColor="@color/color_black"
+        android:text="@string/_0"
+        app:layout_constraintTop_toBottomOf="@+id/sbInterestRate"/>
+
+    <SeekBar
+        android:id="@+id/sbTenure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="360"
+        app:layout_constraintTop_toBottomOf="@+id/tvTenure" />
+
 
     <Button
         android:id="@+id/btnCalculate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/calculate"
-        app:layout_constraintTop_toBottomOf="@+id/etTenure" />
+        app:layout_constraintTop_toBottomOf="@+id/sbTenure" />
 
     <TextView
         android:id="@+id/tvEMI"
