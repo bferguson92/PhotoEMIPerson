@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PhotoEMIPerson</string>
+    <string name="string_photoemiperson">PhotoEMIPerson</string>
+    <string name="string_photo">Take Photo!</string>
+    <string name="string_emi">Open EMI Calculator</string>
+    <string name="btn_person">Add Person!</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="taken_picture">Taken picture</string>
+</resources>
